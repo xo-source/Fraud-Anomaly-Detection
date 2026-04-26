@@ -12,9 +12,18 @@ Credit card fraud is extremely rare compared to normal transactions, making it d
 ---
 
 ## Dataset
-- Credit Card Fraud Dataset (highly imbalanced)
-- Features include anonymized transaction variables, time, and amount
-- Target label used only for evaluation, not training
+
+The dataset is the Kaggle Credit Card Fraud Detection dataset.
+
+It contains 284,807 transactions with 492 fraud cases (highly imbalanced ~0.17%).
+
+Features are anonymized (PCA-transformed V1–V28), with only:
+- Time
+- Amount
+- Class (target)
+
+Link:
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 ---
 
