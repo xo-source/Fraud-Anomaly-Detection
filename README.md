@@ -58,6 +58,15 @@ Although the model is unsupervised, evaluation was performed using labeled data:
 
 ---
 
+## Experiments
+
+Several anomaly detection approaches were tested to evaluate whether performance gains could be achieved beyond Isolation Forest:
+
+- Local Outlier Factor (LOF): struggled with scalability and high-dimensional structure, producing unstable results on the full dataset.
+- Autoencoder-based anomaly detection: showed similar behavior to Isolation Forest, with no significant improvement in separation of fraud vs normal transactions.
+- PCA-based reconstruction error: used as an additional anomaly scoring method, but did not significantly outperform the baseline model.
+
+Overall, results indicate that model complexity did not significantly improve performance, suggesting that the limiting factor is feature representation rather than model choice.
 ## Key Insights
 
 - Increasing model complexity (PCA, feature engineering) did not significantly improve performance
